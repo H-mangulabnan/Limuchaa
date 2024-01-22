@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotional Website</title>
+    <!--boostrap v5 link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!---links for icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!--- fonts ---->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <section id="home">
+      <div class="headline">
+        <h1>Delicious Milk Tea Magic <br>Awaits at Limuchaa!</h1>
+          <h3>Sip, Savor, and Smile &#128516 </h3>
+      </div>
+    </section>
+
+    <!--  About -->
+
+    <section class="about py-5 position-relative" id="about">
+      <div class="container">
+        <div class="content text-center p-5">
+          <h1>Discover Exquisite Bliss at Limuchaa</h1>
+          <p class="p-4">
+            Indulge your senses in the unparalleled world of Limuchaa, where tea becomes an art form and each cup is a canvas of flavor. Our menus are carefully crafted to take you on a journey of taste, inviting you to explore a fusion of premium teas and delectable toppings. From classic indulgences to innovative blends, Limuchaa offers an extraordinary experience for both seasoned enthusiasts and those new to the world of milk tea.
+          </p>
+          <p class="pb-4"> Conveniently located at Kapitan Pepe, Cabanatuan City, our store is more than just a destination—it's a haven for tea aficionados.</p>
+          <p>Come, visit us, and experience the art of tea like never before. </p>
+          <p>Like us on <a href="https://www.facebook.com/limu.chaa.5" target="_blank">Facebook</a> and keep watching out for our exciting new flavors.</p>
+        </div>
+      </div>
+
+      <!--- bg photo --->
+      <div class="bg-image">
+        <img src="./img/cake.png" class="cake">
+        <img src="./img/drink.png" class="drink">
+        <img src="./img/bg1.png" class="bg1">
+      </div>
+    </section>
+
+    <!--- Menus --->
+
+    <section class="p-5 position-relative drinks" id="drinks">
+      <div class="containerBox p-3">
+        <div class="p-5">
+          <h1 class="text-center">"Explore Our Milk Tea Menu"</h1>
+          <!-- Dropdown button for small screens -->
+      <div class="dropdown d-md-none">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="tabDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          Explore Menu
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="tabDropdown">
+          <li><a class="dropdown-item" onclick="opentab('premium-milktea')">Premium Milktea</a></li>
+          <li><a class="dropdown-item" onclick="opentab('milktea')">Milktea</a></li>
+          <li><a class="dropdown-item" onclick="opentab('fruitTea')">Fruit Tea</a></li>
+          <li><a class="dropdown-item" onclick="opentab('frappe')">Frappe</a></li>
+        </ul>
+      </div>
+
+      <!-- Regular tab links for larger screens -->
+      <div class="d-none d-md-flex tab-titles justify-content-center">
+        <p class="tab-links mx-3 mt-2 position-relative" onclick="opentab('premium-milktea')">Premium Milktea</p>
+        <p class="tab-links mx-3 mt-2 position-relative" onclick="opentab('milktea')">Milktea</p>
+        <p class="tab-links mx-3 mt-2 position-relative" onclick="opentab('fruitTea')">Fruit Tea</p>
+        <p class="tab-links mx-3 mt-2 position-relative" onclick="opentab('frappe')">Frappe</p>
+      </div>
+    
+          <!--- premium category`--->
+          <div class="tab-contents active-tab text-center position-relative" id="premium-milktea">
+            <div class="row g-2 pt-3">
+              <div class="col-lg-4 col-md-6 col-xs-">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/menu1.png">
+                  </div>
+                    <h4 class="py-2">Choco Nutella</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Indulge in the rich and delightful fusion of classic chocolate and the creamy goodness of Nutella.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-xs-">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/menu 2.png">
+                    <h4 class="p-2">Hokaido Milkshake</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Satisfy your sweet cravings with Hokaido Milkshake, a delectable treat that harmonizes sweetness with a hint of Japanese sophistication.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-xs-">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/menu 3.png">
+                    <h4 class="py-2">Red Velvet</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Immerse yourself in the royalty of chocolate with Red Velvet, a regal blend that combines the sweetness of red velvet with the richness of milk tea.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-xs-">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/menu 4.png">
+                    <h4 class="py-2">Strawberry Frappe</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Indulge in the delightful chill of Strawberry Frappe, a fruity sensation that combines the goodness of strawberries with the icy allure of a frappe.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--- milktea category`--->
+          <div class="tab-contents text-center position-relative" id="milktea">
+            <div class="row g-2 pt-3">
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/strawberry-milktea.png">
+                  </div>
+                    <h4 class="py-2">Choco Nutella</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet praesentium soluta, ab ea beatae sunt.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/oreo-milktea.png">
+                    <h4 class="p-2">Hokaido Milkshake</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cupiditate praesentium molestias quasi. Eligendi dolores beatae recusandae molestias, quam omnis.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/okinawa-milktea.png">
+                    <h4 class="py-2">Red Velvet</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, distinctio quia! Rem aut pariatur magnam recusandae illum!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/matcha-milktea.png">
+                    <h4 class="py-2">Strawberry Frappe</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea natus labore voluptas quidem quis cumque adipisci repellat corporis.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!--- fruit tea --->
+          <div class="tab-contents text-center position-relative" id="fruitTea">
+            <div class="row g-2 pt-3">
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/matcha-milktea.png">
+                    <h4 class="py-2">Strawberry Frappe</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea natus labore voluptas quidem quis cumque adipisci repellat corporis.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/okinawa-milktea.png">
+                    <h4 class="py-2">Red Velvet</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, distinctio quia! Rem aut pariatur magnam recusandae illum!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/strawberry-milktea.png">
+                  </div>
+                    <h4 class="py-2">Choco Nutella</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet praesentium soluta, ab ea beatae sunt.</p>
+                    </div>
+                </div>
+              </div>
+  
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/oreo-milktea.png">
+                    <h4 class="p-2">Hokaido Milkshake</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci cupiditate praesentium molestias quasi. Eligendi dolores beatae recusandae molestias, quam omnis.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+  
+          <!--- frappe  --->
+          <div class="tab-contents text-center position-relative" id="frappe">
+            <div class="row g-2 pt-3">
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/strawberry-milktea.png">
+                  </div>
+                    <h4 class="py-2">Choco Nutella</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Indulge in the rich and delightful fusion of classic chocolate and the creamy goodness of Nutella.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/oreo-milktea.png">
+                    <h4 class="p-2">Hokaido Milkshake</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Satisfy your sweet cravings with Hokaido Milkshake, a delectable treat that harmonizes sweetness with a hint of Japanese sophistication.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/okinawa-milktea.png">
+                    <h4 class="py-2">Red Velvet</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Immerse yourself in the royalty of chocolate with Red Velvet, a regal blend that combines the sweetness of red velvet with the richness of milk tea.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class=" p-3 box">
+                  <div class="menu-img">
+                    <img src="./img/matcha-milktea.png">
+                    <h4 class="py-2">Strawberry Frappe</h4>
+                    <div class="details d-flex justify-content-center">
+                      <p class="text-start">Indulge in the delightful chill of Strawberry Frappe, a fruity sensation that combines the goodness of strawberries with the icy allure of a frappe.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="bg">
+        <img src="./img/bg2.png" class="bg2">
+        <img src="./img/bg3.png" class="bg3">
+      </div>
+      
+    </section>
+
+    <!--- location --->
+
+    <section class="py-5 position-relative" id="location">
+      <div class="container pb-5">
+        <h1 class="text-center py-5">"Where Sips Meet Smiles: Drop by Our Tea Wonderland!"</h1>
+        <div class="row gx-2">
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <a href="https://www.google.com/maps/place/Limu+Chaa/@15.4837404,120.9535997,15.5z/data=!4m6!3m5!1s0x339728e3d7f73b3f:0xbbb489516ba2988d!8m2!3d15.4833486!4d120.9589365!16s%2Fg%2F11rd9f4ykz?entry=ttu" target="_blank">
+              <img src="./img/map.png">
+              <h3 class="pt-4">CABANATUAN CITY BRANCH</h3>
+            </a>
+            <P>OPEN DAILY 9AM - 10PM</P>
+            <a href="https://www.facebook.com/limu.chaa.5/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 512 512"><style>svg{fill:#3061b5}</style><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+            </a>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <a href="https://www.google.com/maps/place/Limu+Chaa/@15.4837404,120.9535997,15.5z/data=!4m6!3m5!1s0x339728e3d7f73b3f:0xbbb489516ba2988d!8m2!3d15.4833486!4d120.9589365!16s%2Fg%2F11rd9f4ykz?entry=ttu" target="_blank">
+              <img src="./img/map.png">
+              <h3 class="pt-4">SAN JOSE CITY BRANCH</h3>
+            </a>
+            <P>OPEN DAILY 9AM - 10PM</P>
+            <a href="https://www.facebook.com/LimuChaaSJC" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 512 512"><style>svg{fill:#3061b5}</style><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg">
+        <img src="./img/bg4.png" class="bg4">
+        <img src="./img/bg5.png" class="bg5">
+      </div>
+    </section>
+
+    <!--- contact --->
+
+    <footer class="py-4" id="contact">
+      <h2 class="text-center py-4">"Get in Touch – We're Just a Cup of Tea Away!"</h2>
+      <div class="container border-top border-bottom ">
+        <div class="row gx-1 text-center">
+          <div class="col-lg-4 py-4">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 512 512">
+              <style>svg{fill:#2864ca}</style><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+            <h5 class="pt-2">EMAIL US</h5>
+            <a href="">email.limuchaa.com</a>
+          </div>
+          <div class="col-lg-4 py-4">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 512 512">
+              <style>svg{fill:#2864ca}</style><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+            <h5 class="pt-2">CONTACT US</h5>
+            <a href="">+63 998 7654 321</a>
+          </div>
+          <div class="col-lg-4 py-4">
+            <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 0 384 512">
+              <style>svg{fill:#2864ca}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+            <h5 class="pt-2">MAIN BRANCH</h5>
+            <a href="">General Tinio Street Extension, Extension, Cabanatuan City, Nueva Ecija</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 ">
+            <p>&copy; COPYRIGHT 2023 - LIMUCHAA </p>
+            <P>DESIGN & CREATED BY HANNAH MANGULABNAN</P>
+          </div>
+
+          <div class="col-md-6 col-sm-12 d-flex justify-content-end iconTab">
+            <div class="circle position-relative d-flex align-items-center justify-content-center">
+              <a href="https://www.facebook.com/limu.chaa.5/">
+                <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+              </a>
+            </div>
+            <div class="circle position-relative d-flex align-items-center justify-content-center">
+              <a href="https://www.instagram.com/limuchaacabanatuan?fbclid=IwAR0xboUHFQkX-OvaLJGiCTwaR5Nlf9p9ibFIHEYOmT9kepntYMsLL-5JtIA">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+
+      <!---js link--->
+      <script src="./index.js"></script>
+    
+
+     <!--bootstrap js link-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+     
+</body>
+</html>

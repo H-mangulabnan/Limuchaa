@@ -1,0 +1,280 @@
+:root {
+    --primary-color: #f77f00;
+    --first-font:'Josefin Sans', sans-serif;
+    --second-font:'Montserrat', sans-serif;
+}
+body {
+    font-family: var(--first-font);
+    overflow-x: hidden;
+}
+.yellow {
+    color: var(--primary-color);
+}
+
+#home {
+    background: url(./img/bg-edited.png);
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+}
+.headline {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    font-family: var(--second-font);
+}
+.headline h1{
+    font-size: 47px;
+    font-weight: bold;
+}
+
+/*****  about   *****/
+
+#about {
+    background: rgb(252,213,179);
+    background: radial-gradient(circle, rgba(252,213,179,1) 0%, rgba(255,255,255,1) 76%, rgba(252,213,179,1) 96%);
+}
+#about h1 {
+    font-style: italic;
+    font-size: 45px;
+}
+#about p {
+    font-size: 18px;
+}
+#about a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+#about button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    
+}
+.bg-image {
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-image .cake {
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    height: 150px;
+    transform: rotate(10deg);
+    opacity: 0.5;
+    display: block;
+}
+.bg-image .drink {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 170px;
+    transform: rotate(15deg);
+    opacity: 0.8;
+}
+.bg-image .bg1 {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    height: 280px;
+    transform: rotate(-10deg);
+    opacity: 0.8;
+}
+
+/***    menu    ****/
+
+.containerBox {
+    background: rgb(252,213,179);
+    background: radial-gradient(circle, rgba(252,213,179,1) 0%, rgba(255,255,255,1) 76%, rgba(252,213,179,1) 96%);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tab-titles p{
+    font-size: 20px;
+}
+
+.tab-links {
+    cursor: pointer;
+}
+.tab-contents ul li {
+    list-style: none;
+}
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab {
+    display: block;
+}
+.tab-contents p{
+    width: 300px;
+    height: 85px;
+    font-size: 14px;
+    overflow-y: auto;
+}
+.tab-contents .box{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: rgb(248, 242, 242);
+    border-radius: 30px;
+}
+.tab-contents .box:hover{
+    border: 1px solid var(--primary-color);
+}
+.menu-img img{
+    height: 150px;
+    padding-bottom: 10px;
+}
+
+#drinks .bg .bg2 {
+    display: block;
+    position: absolute;
+    top: 105px;
+    right: -14px;
+    height: 170px;
+    transform: rotate(-104deg);
+    opacity: 0.8;
+}
+#drinks .bg .bg3 {
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    right: -15px;
+    height: 250px;
+    opacity: 0.8;
+    overflow: hidden;
+}
+/***    location    ***/
+#location a img {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#location h3 {
+    font-size: 20px;
+    cursor: pointer;
+}
+#location h3:hover {
+    color: var(--primary-color);
+}
+#location a {
+    color: black;
+    text-decoration: none;
+}
+.circle {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin: 0 5px;
+}
+#location .bg .bg4 {
+    position: absolute;
+    display: block;
+    bottom: 130px;
+    right: 150px;
+    height: 350px;
+    opacity: 0.8;
+    
+}
+#location .bg .bg5 {
+    position: absolute;
+    display: block;
+    bottom: -110px;
+    right: 210px;
+    height: 100px;
+    transform: rotate(-5deg);
+    opacity: 0.8;
+}
+
+/***    contact ***/
+#contact a{
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+}
+#contact a:hover{
+    color: var(--primary-color);
+}
+/***    footer  ***/
+
+footer {
+    background: #2f3651;
+    color: rgb(196, 196, 196);
+}
+
+/*******   media query  *******/
+
+@media (max-width:1024px)  {
+    #home {
+        background-position: right center;
+    }
+    .headline h1 {
+        font-size: 35px;
+    }
+    .headline h3 {
+        font-size: 25px;
+    }
+    .bg-image .bg1 {
+        height: 220px;
+    }
+    #drinks .bg .bg3 {
+        height: 200px;
+        right: -21px;
+        bottom: -4px;
+    }
+    #location .bg .bg4 {
+        right: -95px;
+        bottom: 0;
+    }
+    #location .bg .bg5 {
+        right: 68px;
+    }
+}
+
+@media (max-width:768px) {
+    #about .content {
+        padding: 0;
+    }
+    .bg-image .cake {
+        height: 120px;
+    }
+    .bg-image .drink {
+        left: -15px;
+        height: 140px;
+    }
+    .bg-image .bg1 {
+        height: 166px;
+        right: -4px;
+        bottom: -52px;
+    }
+    .menu-img img {
+        height: 120px;
+    }
+    #drinks .bg .bg3 {
+        height: 194px;
+        right: -25px;
+        bottom: -20px;
+    }
+    #location .bg .bg4 {
+        right: -67px;
+        bottom: -36px;
+        height: 270px;
+    }
+    #location .bg .bg5 {
+        right: -13px;
+    }
+}
+
+@media (max-width:425px) {
+    .headline h1{
+        font-size: 30px;
+    }
+    .headline h3 {
+        font-size: 22px;
+    }
+    .p-5 {
+        padding: 0;
+    }
+    #contact .iconTab{
+        justify-content: flex-start !important;
+    }
+}
